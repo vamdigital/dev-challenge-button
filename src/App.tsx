@@ -34,6 +34,16 @@ function App() {
         <Button disableShadow>Disabled Shadow</Button>
       </div>
       <div className="container">
+        <Button color="primary" startIcon="local_grocery_store">
+          Icon
+        </Button>
+      </div>
+      <div className="container">
+        <Button color="primary" endIcon="local_grocery_store">
+          Icon
+        </Button>
+      </div>
+      <div className="container">
         <Button sizes="sm">small</Button>
       </div>
       <div className="container">

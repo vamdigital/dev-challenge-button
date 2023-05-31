@@ -32,19 +32,22 @@ export const Button = ({
         [Styles[variant]]: variant,
       }),
       [Styles.disableShadow]: disableShadow,
+      [Styles.startIcon]: startIcon,
+      [Styles.endIcon]: endIcon,
       [Styles[sizes]]: sizes,
       ...(color && {
         [Styles[color]]: color,
       }),
     },
+
     [className]
   );
   return (
     <>
       <button className={classNames} {...props}>
-        {startIcon && <p>startIcon</p>}
+        {startIcon && <span className="material-icons">{startIcon}</span>}
         {children}
-        {endIcon && <p>endIcon</p>}
+        {endIcon && <span className="material-icons">{endIcon}</span>}
       </button>
     </>
   );
