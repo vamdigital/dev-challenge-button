@@ -2,9 +2,17 @@ import "./App.css";
 import { Button } from "./components/Button";
 
 function App() {
+  const d = new Date();
+  const fullYear = d.getFullYear();
   return (
     <>
-      <h1>Hello Vite</h1>
+      <h1>Dev Challenge io - Button </h1>
+      <p>
+        Prefer Storybook - visit -{" "}
+        <a href="https://dc-vam-button-sb.vercel.app/" target="_blank">
+          StoryBook
+        </a>
+      </p>
       <div className="container">
         <Button> Default </Button>
       </div>
@@ -43,6 +51,13 @@ function App() {
       <div className="container">
         <Button color="danger">Danger</Button>
       </div>
+      <span>
+        &copy; {fullYear} -
+        <a href="https://www.vamdigital.com/comingsoon" target="_blank">
+          {" "}
+          VAM Digital Limited
+        </a>
+      </span>
     </>
   );
 }
