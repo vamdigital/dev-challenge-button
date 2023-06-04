@@ -16,6 +16,7 @@ interface Props {
   fullWidth?: boolean;
   value?: string;
   multiline?: boolean;
+  row?: number;
 }
 
 export const Input = ({
@@ -33,6 +34,7 @@ export const Input = ({
   fullWidth,
   value,
   multiline,
+  row,
 }: Props) => {
   const classNames = clsx(
     {
@@ -98,7 +100,7 @@ export const Input = ({
         <>
           <label htmlFor={inputName}>{labelText}</label>
           <textarea
-            rows={5}
+            rows={row}
             cols={30}
             placeholder={placeholder}
             className={style.multiline}

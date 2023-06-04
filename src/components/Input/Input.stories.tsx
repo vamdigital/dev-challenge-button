@@ -85,4 +85,5 @@ export const MultiLine = Template.bind({});
 MultiLine.args = {
   inputName: "multiline",
   multiline: true,
+  row: 4,
 };
