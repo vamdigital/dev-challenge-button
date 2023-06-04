@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

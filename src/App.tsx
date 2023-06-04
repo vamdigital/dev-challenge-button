@@ -1,11 +1,27 @@
 import "./App.css";
 import { Button } from "./components/Button";
+import { TextAccordion } from "./components/TextAccordion";
 
 function App() {
   const d = new Date();
   const fullYear = d.getFullYear();
   return (
     <>
+      <h1>Text Accordion </h1>
+      <div
+        style={{
+          width: "100%",
+          margin: "0 auto",
+          background: "#F4F4F4",
+          padding: "20px",
+          display: "grid",
+          gridTemplateColumns: "auto 1fr",
+          gridGap: "12px",
+        }}
+      >
+        <input type="checkbox" />
+        <TextAccordion />
+      </div>
       <h1>Dev Challenge io - Button </h1>
       <p>
         Prefer Storybook - visit -{" "}
